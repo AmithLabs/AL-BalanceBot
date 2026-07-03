@@ -1,4 +1,4 @@
-﻿# AL-BalanceBot
+﻿# AL-BalanceBot self-balancing robot Controller
 
 <p align="center">
   <img src="images/banners/banner.png" alt="AL-BalanceBot Banner" width="100%">
