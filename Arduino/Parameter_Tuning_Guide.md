@@ -398,8 +398,8 @@ Default firmware values:
 
 ```cpp
 const float BATTERY_ADC_REF_VOLTAGE = 5.00;
-const float BATTERY_R1_OHMS = 100000.0;
-const float BATTERY_R2_OHMS = 33000.0;
+const float BATTERY_R1_OHMS = 2200.0;
+const float BATTERY_R2_OHMS = 1000.0;
 const float BATTERY_CALIBRATION = 1.000;
 const float BATTERY_FILTER_ALPHA = 0.15;
 ```
@@ -438,7 +438,7 @@ const float BATTERY_ADC_REF_VOLTAGE = 4.82;
 ## `BATTERY_R1_OHMS`
 
 ```cpp
-const float BATTERY_R1_OHMS = 100000.0;
+const float BATTERY_R1_OHMS = 2200.0;
 ```
 
 This is the top resistor from battery positive to A6.
@@ -453,7 +453,7 @@ Increase/decrease effects:
 Default:
 
 ```text
-100k
+2.2k
 ```
 
 ---
@@ -461,7 +461,7 @@ Default:
 ## `BATTERY_R2_OHMS`
 
 ```cpp
-const float BATTERY_R2_OHMS = 33000.0;
+const float BATTERY_R2_OHMS = 1000.0;
 ```
 
 This is the bottom resistor from A6 to GND.
@@ -476,7 +476,7 @@ Increase/decrease effects:
 Default:
 
 ```text
-33k
+1k
 ```
 
 ---
@@ -486,16 +486,16 @@ Default:
 With 100k / 33k:
 
 ```text
-A6 voltage = battery voltage × 33k / (100k + 33k)
+A6 voltage = battery voltage × 1k / (2.2k + 1k)
 ```
 
 Approximate safe maximum battery voltage with 5V ADC reference:
 
 ```text
-5.0 × (100k + 33k) / 33k = about 20.15V
+5.0 × (2.2k + 1k) / 1k = about 16.00V
 ```
 
-This is suitable for common 2S, 3S, and 4S Li-ion/LiPo packs.
+This is suitable for common 2S and 3S Li-ion/LiPo packs.
 
 Never connect battery directly to A6.
 
