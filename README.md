@@ -37,7 +37,7 @@ The app is designed for robotics enthusiasts, makers, students and automation en
 
 Watch the complete build, wiring and testing video on YouTube.
 
-[![Watch on YouTube](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch on YouTube](https://img.youtube.com/vi/pu0MfUdmAuo/maxresdefault.jpg)](https://www.youtube.com/watch?v=pu0MfUdmAuo)
 
 ---
 
